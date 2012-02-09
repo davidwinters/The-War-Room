@@ -1,0 +1,159 @@
+#wrapper{
+ background-image: url("../img/maps/map-abbey-1.jpg");
+ background-size:870px 870px;
+ height:870px;
+ cursor: crosshair;
+}
+#canvasbuffer{
+    display:none;
+  
+}
+#depot{
+    display:block;
+    height:100px;
+ 
+
+}
+#menu{
+ background-color:#fff;  
+}
+
+.parent{
+ display:block;
+ width:75px;
+ height:50px;
+ cursor: pointer;
+ float:left;
+ }
+
+ .parent .close{
+ 	display:none;
+ }
+.pawn{
+ display:block;
+ width:75px;
+ height:50px;
+color:white;
+cursor:move; 
+text-shadow: 2px 2px 2px #000;
+}
+
+.t30{
+    background-image: url("../img/contour.png");
+    background-position: -62px -142px;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 60px;
+}
+.t92 {
+    background-image: url("../img/contour.png");
+    background-position: -62px -160px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 58px;
+}
+.patton {
+    background-image: url("../img/contour.png");
+    background-position: -123px -125px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 57px;
+}
+.t95{
+	background-image: url("../img/contour.png");
+    background-position: 0 -86px;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 71px;
+}
+.is7{
+    background-image: url("../img/contour.png");
+     background-position: -71px -69px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 67px;
+}
+.object261 {
+    background-image: url("../img/contour.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 74px;
+}
+.t54 {
+    background-image: url("../img/contour.png");
+ background-position: -256px -41px;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 48px;
+}
+.object704{
+	background-image: url("../img/contour.png");
+background-position: 0 -238px;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 58px;
+}
+.maus{
+    background-image: url("../img/contour.png");
+    background-position: -139px -45px;
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 63px;
+}
+.e100{
+    background-image: url("../img/contour.png");
+   background-position: -139px -45px;
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 63px;
+}
+.gwtigere {
+    background-image: url("../img/contour.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 74px;
+}
+.e50 {
+    background-image: url("../img/contour.png");
+ background-position: 0 -143px;
+    background-repeat: no-repeat;
+    height: 19px;
+    width: 62px;
+}
+.jtiger{
+	background-image: url("../img/contour.png");
+background-position: 0 -123px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 62px;
+}
+.amx50b{
+    background-image: url("../img/contour.png");
+   background-position: -72px -23px;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 69px;
+}
+.batchat {
+    background-image: url("../img/contour.png");
+background-position: -202px -63px;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 53px;
+}
+
+#slider-vertical {
+    width:100px;
+}
+.colorwheel{
+    
+    float: left;
+    height: 150px;
+    margin-right: 20px;
+    text-align: left;
+    width: 150px;
+}
+.input_example{ background-color:#FF0000;}
+.colorwrapper{ padding:10px;}
