@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+
+    w = new WOAR();
+
  // TANKS
 
       //make tanks draggable
