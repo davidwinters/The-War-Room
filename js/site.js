@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     w = new WOAR();
 
+    var canoffset = $('canvas').offset();
+
  // TANKS
 
       //make tanks draggable
@@ -16,7 +18,7 @@ $(document).ready(function() {
         drop: function (event, ui){
           var offset = ui.offset;
           
-          ui.draggable.clone().removeClass('parent').addClass('pawn').appendTo($(this)).css({'position': 'absolute', 'left': offset.left, 'top': offset.top}).draggable();
+          ui.draggable.clone().removeClass('parent').addClass('pawn').appendTo($(this)).css({'position': 'absolute', 'left': offset.left - canoffset.left, 'top': offset.top - canoffset.top }).draggable();
         }
       });
 
@@ -57,8 +59,10 @@ $(document).ready(function() {
         $("canvas").mousedown(function(e){draw=true;
             draw=true;
               ctx.save();
-              x = e.pageX-this.offsetLeft;
-              y = e.pageY-this.offsetTop; 
+              var offset = $('canvas').offset();
+
+              x = e.pageX-offset.left;
+              y = e.pageY-offset.top; 
 
               
          
@@ -78,20 +82,20 @@ $(document).ready(function() {
                     ctx.lineWidth = brushSize;
                     ctx.lineCap = "round";
                     ctx.beginPath();
-                    ctx.moveTo(e.pageX-this.offsetLeft,e.pageY-this.offsetTop);
+                    ctx.moveTo(e.pageX-offset.left,e.pageY-offset.top);
                     ctx.lineTo(x,y);
                     ctx.stroke();
                     ctx.closePath();
-                    x = e.pageX-this.offsetLeft;
-                    y = e.pageY-this.offsetTop;  
+                    x = e.pageX-offset.left;
+                    y = e.pageY-offset.top;  
 
             }    
        });
 
-      //eraser CURRENTLY not implemented or working
-        $('#eraser button').click(function() {
+      //eraser
+        $('button.eraser').click(function() {
            //check if eraser button is toggled
-        if($("#eraser button").hasClass('active')){
+        if($("button.eraser").hasClass('active')){
                ctx.globalCompositeOperation = "source-over";
                 ctx.strokeStyle = color;
                 

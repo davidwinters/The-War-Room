@@ -3,6 +3,8 @@
  background-size:870px 870px;
  height:870px;
  cursor: crosshair;
+ position:relative;
+ z-index:1;
 }
 #canvasbuffer{
     display:none;
@@ -10,7 +12,7 @@
 }
 #depot{
     display:block;
-    height:100px;
+    
  
 
 }
@@ -24,6 +26,7 @@
  height:50px;
  cursor: pointer;
  float:left;
+ z-index:100;
  }
 
  .parent .close{
@@ -36,6 +39,7 @@
 color:white;
 cursor:move; 
 text-shadow: 2px 2px 2px #000;
+z-index:100;
 }
 
 .t30{

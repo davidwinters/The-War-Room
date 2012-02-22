@@ -56,14 +56,11 @@ WOAR.prototype.save = function() {
 	$('.pawn div').each(function(index) {
 
 		var off = $(this).offset();
-		var coff = $("#can").offset();
-
-		posx =  off.left - coff.left;
-		posy = off.top -coff.top;
+		var canoffset2 = $('canvas').offset();
 
 		var imgstring = $(this).attr('class');
 
-		map.pawns.push({x:off.left,y:off.top,tank:imgstring});
+		map.pawns.push({x:off.left - canoffset2.left,y:off.top - canoffset2.top,tank:imgstring});
 
 
 	});
@@ -104,6 +101,7 @@ WOAR.prototype.load = function(id) {
 		$.each(pawns,function(i,value){
 			
 			tank = $(".tab-content").find("." + value.tank).parent().clone().removeClass("parent").addClass("pawn");
+			var canoffset = $('canvas').offset();
 			$("#wrapper").prepend(tank);
 			$(tank).css({position:"absolute",top:value.y + "px",left:value.x + "px"})
 			$(tank).draggable();

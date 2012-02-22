@@ -85,50 +85,18 @@
                   <li><a title="map-westfield-1.jpg">Westfield</a></li>
                   </ul>
                 </div>
-               <div id="brushcolor" class="btn-group">
-                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                  Color
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                  <!-- dropdown menu links -->
-                  <div class='colorwrapper'>
-                  <div class="colorwheel"></div>
-                 
-                   <input name="input_example" class="input-small input_example" type="text" />
-                   </div>
-                  </ul>
-                </div>
-                <div id="brushsize" class="btn-group">
-                  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                  Size
-                    <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                  <!-- dropdown menu links -->
-                  <div class='colorwrapper'>
-                  <div id="slider-vertical"></div>
-                 
-                   <input name="brush_size" class="input-small brushsize" type="text" />
-                   </div>
-                  </ul>
-                </div>
-                <div id="eraser" class="btn-group">
-                <button class="btn" data-toggle="button">
-                  <i class="icon-remove"></i>Eraser
-                </button>
-                </div>
-                <div id="save" class="btn-group">
+                <div id="save-new" class="btn-group">
                 <button class="btn">
                   <i class="icon-camera"></i> Save
                 </button>
                 </div>
-
-                <div id="save-new" class="btn-group">
+                <div id="save" class="btn-group">
                 <button class="btn">
-                  <i class="icon-camera"></i> Save (NEW)
+                  <i class="icon-camera"></i> Export PNG
                 </button>
                 </div>
+
+               
 
             </div>
 
@@ -187,7 +155,21 @@
                     </div>
             
             </div>
-            <div id="depot" class="well"></div>
+            <div id="depot" class="well">
+            <h3>Paint Tools</h3>
+                    <div class="colorwheel"></div>
+                 
+                    <input name="input_example" class="span1 input_example" type="text" />
+                    <h4>Brush Size</h4>
+                    <div id="slider-vertical"></div>
+            
+                   <input name="brush_size" class="span1 brushsize" type="text" />
+                  <br/>
+                   <button class="btn eraser" data-toggle="button">
+                  <i class="icon-remove"></i>Eraser
+                </button>
+
+            </div>
        </div>  
 
 
@@ -210,7 +192,6 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/raphael-1.3.1-min.js"></script>
     <script src="js/colorwheel.js"></script>
-    <script src="js/jquery.couch.js"></script>
     <script src="js/db.js"></script>
     <script src="js/site.js"></script>
 
