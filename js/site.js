@@ -144,7 +144,7 @@ $(document).ready(function() {
 
       //save canvas
 
-        //function helps convert CSS properties to Canas properties
+        //function helps convert CSS properties to Canvas properties
         function removepx(mystring){
           var newstring = new String(mystring);
           var pxstart = newstring.search('p');
